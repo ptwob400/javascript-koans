@@ -88,11 +88,17 @@ describe("About Applying What We Have Learnt", function() {
 
   /*********************************************************************************/
   /* UNCOMMENT FOR EXTRA CREDIT */
-  /*
+  
   it("should find the largest prime factor of a composite number", function () {
-
+  var number = function(num) {
+    var divisor = 2;
+    if (num % divisor === 0) {
+      return num /= divisor;
+    } else divisor++;
+  }
   });
 
+  /*
   it("should find the largest palindrome made from the product of two 3 digit numbers", function () {
 
   });
